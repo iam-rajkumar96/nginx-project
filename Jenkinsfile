@@ -18,18 +18,7 @@ pipeline {
                 }
             }
         }
-
-        stage('Push Docker Image') {
-            steps {
-                // Push the Docker image to a registry
-                script {
-                    // docker.withRegistry('https://your-docker-registry-url', 'docker-registry-credentials') {
-                     //   dockerImage.push()
-                    }
-                }
-        }
         
-
         stage('Deploy to Nginx') {
             steps {
                 // Deploy the Docker container using Nginx
