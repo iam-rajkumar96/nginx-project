@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+                sh 'echo passed'
                 // Check out the source code from Git
                 // git branch: 'main', url: 'git clone https://github.com/iam-rajkumar96/nginx-project.git'
             }
