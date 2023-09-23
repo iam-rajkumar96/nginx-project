@@ -14,7 +14,7 @@ pipeline {
             steps {
                 // Build the Docker image
                 script {
-                   sh 'cd /home/rajkumarsan.321/nginx/nginx-project/ && docker build -t notes-app .'
+                   sh 'cd nginx-project/ && docker build . -t nginx-app'
                 }
             }
         }
