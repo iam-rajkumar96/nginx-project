@@ -26,8 +26,8 @@ pipeline {
                      //   dockerImage.push()
                     }
                 }
-            }
         }
+        
 
         stage('Deploy to Nginx') {
             steps {
